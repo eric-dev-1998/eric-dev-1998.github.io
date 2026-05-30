@@ -5,10 +5,16 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </head>
     <body class="bg-dark">
-        <div class="container">
-            <div class="border-bottom" name="Head">Header</div>
-            <div name="Content">Content</div>
-            <div class="border-top" name="Foot">Foot</div>
+        <div class="container d-flex flex-column">
+            <div class="border-bottom align-self-start" name="Head">
+                <p class="text-light">Header</p>
+            </div>
+            <div class="align-self-start" name="Content">
+                <p class="text-light">Content</p>
+            </div>
+            <div class="border-top align-self-end" name="Foot">
+                <p class="text-light">Foot</p>
+            </div>
         </div>
     </body>
 </html>
