@@ -19,3 +19,6 @@
     4. 2 Buttons:
         1. Hire me
         2. See my work
+
+### About me page:
+1. Name
