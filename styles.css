@@ -1,0 +1,13 @@
+.inflate-on-focus {
+    /* Ensures the transition is smooth */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+}
+
+/* Targets both focus states to ensure it triggers on click and keyboard tab */
+.inflate-on-focus:focus,
+.inflate-on-focus:focus-visible {
+    transform: scale(1.05) !important;
+    outline: none !important;
+    /* Optional: adds depth to the inflated look */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important; 
+}

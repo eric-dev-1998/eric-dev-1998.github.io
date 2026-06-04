@@ -7,14 +7,15 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </head>
     <body class="bg-dark d-flex flex-column min-vh-100">
-        <div class="container-fluid d-flex flex-grow-1 flex-column justify-content-center">
+        <div class="container-fluid d-flex flex-grow-1 flex-column justify-content-center p-3">
             <div name="Center card" class="col-sm-12 col-lg-6 align-self-center z-3">
                 <div class="d-flex flex-row justify-content-center align-items-center mb-5">
-                    <img src="Img/Unity.png" class="img-fluid" style="min-height:30%; min-width:30%;">
-                    <img src="Img/Godot.png" class="img-fluid" style="min-height:30%; min-width:30%;">
+                    <img src="Img/Unity.png" class="img-fluid w-25">
+                    <img src="Img/Godot.png" class="img-fluid w-25">
                 </div>
                 <div name="Center card" class="bg-black p-3 rounded-3">
                     <p class="text-light fs-5">Hello! My name is</p>
@@ -32,13 +33,13 @@
             <div class="d-flex flex-column mt-5 justify-content-center">
                 <h3 class="text-light fw-bold text-center mb-5">My most recent work:</h3>
                 <div class="d-flex flex-md-row flex-column justify-content-center">
-                    <a class="border border-secondary col-md-3 col-12 me-md-4 mb-md-0 mb-3 p-0" href="">
-                        <video class="w-100 h-auto z-100" src="https://media.githubusercontent.com/media/eric-dev-1998/eric-dev-1998.github.io/main/Img/Space Pilot.mp4" autoplay muted loop></video>
-                        <div class="bg-black m-0 p-3"><h4 class="text-light text-center">Godot - Space pilot</h4></div>
+                    <a class="d-flex flex-column border border-secondary rounded-3 col-md-3 col-12 me-md-4 mb-md-0 mb-3 p-0" href="">
+                        <video class="w-100 h-auto z-100 rounded-top-3" src="https://media.githubusercontent.com/media/eric-dev-1998/eric-dev-1998.github.io/main/Img/Space Pilot.mp4" autoplay muted loop></video>
+                        <div class="btn btn-dark d-flex m-0 p-3 rounded-bottom-3 flex-fill justify-content-center align-items-center"><h4 class="text-light text-center text-wrap">Godot - Space pilot</h4></div>
                     </a>
-                    <a class="border border-secondary col-md-3 col-12 h-auto p-0" href="">
-                        <video class="w-100 h-auto z-100" src="https://media.githubusercontent.com/media/eric-dev-1998/eric-dev-1998.github.io/main/Img/TD3D Prototype.mp4" autoplay muted loop></video>
-                        <div class="bg-black m-0 p-3"><h4 class="text-light text-center">Unity - 3D Top down prototype</h4></div>
+                    <a class="d-flex flex-column border border-secondary col-md-3 col-12 h-auto p-0 rounded-3" href="">
+                        <video class="w-100 h-auto z-100 rounded-top-3" src="https://media.githubusercontent.com/media/eric-dev-1998/eric-dev-1998.github.io/main/Img/TD3D Prototype.mp4" autoplay muted loop></video>
+                        <div class="btn btn-dark d-flex m-0 p-3 rounded-bottom-3 flex-fill justify-content-center align-items-center"><h4 class="text-light text-center text-wrap">Unity - 3D Top down prototype</h4></div>
                     </a>
                 </div>
             </div>
