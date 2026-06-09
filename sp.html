@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eric Enriquez</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </head>
+    <body class="bg-dark d-flex flex-column min-vh-100">
+        <div class="bg-black p-3 d-flex flex-sm-row flex-column">
+            <div class="d-flex col-sm-6 justify-content-center align-items-center">
+                <h2 class="text-light mb-sm-0 mb-3">Eric Enriquez</h2>
+            </div>
+            <div class="d-flex col-sm-6 justify-content-center">
+                <a class="btn btn-lg btn-primary align-self-center" href="mailto:ericbusiness103@outlook.com">
+                    <div class="d-flex align-items-center justify-content-center"><img class="img-fluid me-2 align-self-center" width="24px" height="24px" src="Img/Email.png"/>Email me</div>
+                </a>
+                <a class="btn btn-lg btn-dark mx-3" href="aboutme.html">About me</a>
+                <a class="btn btn-lg btn-dark" href="index.html">Home</a>
+            </div>
+        </div>
+        
+        <div class="container d-flex flex-column flex-grow-1 p-3">
+            <div class="d-flex flex-column bg-dark-subttle border border-dark-subtle rounded-3 p-4">
+                <h1 class="text-center mt-2 fw-bold">Space Pilot</h1>
+                <p class="text-center">Rail shooter, Shoot'em up</p>
+                <p class="text-center"> <strong>Role: </strong>Solo developer</p>
+                <video class="w-100 h-auto z-100 rounded-top-3" src="https://media.githubusercontent.com/media/eric-dev-1998/eric-dev-1998.github.io/main/Img/Space Pilot.mp4" controls playsinline></video>
+
+
+                <div class="d-flex justify-content-center my-3">
+                    <a class="btn btn-success me-3" href="https://github.com/eric-dev-1998/godot-space-pilot">View code</a>
+                    <a class="btn btn-primary" href="https://github.com/eric-dev-1998/godot-space-pilot/releases/tag/v0.7_Beta">Download</a>
+                </div>
+                
+                <div class="bg-dark-subtle border border-dark-subtle rounded-3 p-3 mb-3">
+                    <h4 class="fw-bold">Description</h4>
+                    <p>This is a demo, the final game has 3 levels to play with a boss in two of them.<br>It takes inspiration from the Star Fox game series. One thing to have in mind is that I used sound effects from Star Fox 64, I made that decision to lighten the workload, since my focus isn't on audio, but rather on creating game systems and mechanics.</p>
+                </div>
+                
+                <div class="bg-dark-subtle border border-dark-subtle rounded-3 p-3 mb-3">
+                    <h4 class="fw-bold">Key details & tech stack</h4>
+                    <p><strong>Engine:</strong><img src="Img/Godot.png" height="64px" alt=""></p>
+                    <p><strong>Language:</strong> GDScript</p>
+                    <p><strong>Development time:</strong> Development started on January 7th - Still in development</p>
+                    <p><strong>Platforms:</strong> Windows</p>
+                </div>
+                
+                <div class="bg-dark-subtle border border-dark-subtle rounded-3 p-3 mb-0">
+                    <h4 class="fw-bold">Engeneering and technical breakdown</h4>
+                    <p class="bg-dark-subtle border border-dark-subtle rounded-3 p-3"><strong>The challenge: </strong><br>Create a data driven based structure to make level design easier, this involves the obstacles, enemies and bosses.</p>
+                    <p class="bg-dark-subtle border border-dark-subtle rounded-3 p-3"><strong>The solution: </strong><br>I created reusable classes for obstacles, enemies & bosses whose data is entered from the engine inspector avoiding the necessity of re doing code.<br><br>The real challenge came with the boss class, in Star Fox 64 boss fights progress through stages and I wanted to do the exact same thing, to do so, I created a stage class to define each stage behavivor, say, advance conditions, advance animations and stage specific attacks.<br><br>One last thign about bosses is how they recieve damage, I added the possibility to use weakpoints or take damage from anywhere as well as conditions to advance through each boss stage, not to mention that damage may not be needed through some stages, some are just to play a transition animation.<br><br>Last but not least, I also created a class to create attacks that are data driven as well, it just needs the projectile texture and some poroperties as frecuency, max ammo or reload cooldown.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
