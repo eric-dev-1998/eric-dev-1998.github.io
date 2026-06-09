@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eric Enriquez</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </head>
+    <body class="bg-dark d-flex flex-column min-vh-100">
+        <div class="bg-black p-3 d-flex flex-md-row flex-column">
+            <div class="d-flex col-sm-6 justify-content-center align-items-center">
+                <h2 class="text-light mb-sm-0 mb-3">Eric Enriquez</h2>
+            </div>
+            <div class="d-flex flex-md-row flex-column col-sm-6 justify-content-center">
+                <a class="btn btn-lg btn-primary" href="mailto:ericbusiness103@outlook.com">
+                    <div class="d-flex align-items-center justify-content-center"><img class="img-fluid me-2 align-self-center" width="24px" height="24px" src="Img/Email.png"/>Email me</div>
+                </a>
+                <a class="btn btn-lg btn-dark mx-md-3 my-md-0 my-2" href="aboutme.html">About me</a>
+                <a class="btn btn-lg btn-dark" href="index.html">Home</a>
+            </div>
+        </div>
+        
+        <div class="container d-flex flex-column flex-grow-1 p-3">
+            <div class="d-flex flex-column bg-dark-subttle border border-dark-subtle rounded-3 p-4">
+                <h1 class="text-center mt-2 fw-bold">Monogame 2D Arena Shooter</h1>
+                <p class="text-center">2D, Arena shooter</p>
+                <p class="text-center"> <strong>Role: </strong>Solo developer</p>
+                <video class="w-100 h-auto z-100 rounded-top-3" src="https://media.githubusercontent.com/media/eric-dev-1998/eric-dev-1998.github.io/main/Img/Arena shooter.mp4" controls playsinline></video>
+
+
+                <div class="d-flex justify-content-center my-3">
+                    <a class="btn btn-success me-3" href="https://github.com/eric-dev-1998/Unity-top-down-3d-adventure-game.git">View code</a>
+                    <a class="btn btn-primary" href="https://github.com/eric-dev-1998/monogame-prototype-2d-shooter/releases/tag/v1.0">Download</a>
+                </div>
+                
+                <div class="bg-dark-subtle border border-dark-subtle rounded-3 p-3 mb-3">
+                    <h4 class="fw-bold">Description</h4>
+                    <p>I built this little prototype to get to know better how this framework works.<br><br>
+                        It helped me understand a little more how some engines work on the inside. I always worked in engines such as Unity, Godot or GameMaker where the assets are loaded by the engine automatically and i completely forgot that the assets have to be loaded in some point of the game loop.<br><br>
+
+                        I'm glad i decided to try Monogame, it opened my eyes to more aspects of videogames development i used to take for granted and now i know there is a lot more than just draging and droping to make a game.
+                    </p>
+                </div>
+                
+                <div class="bg-dark-subtle border border-dark-subtle rounded-3 p-3 mb-3">
+                    <h4 class="fw-bold">Key details & tech stack</h4>
+                    <p><strong>Engine:</strong><img src="Img/MonoGame.png" height="64px" alt=""></p>
+                    <p><strong>Language:</strong> C#</p>
+                    <p><strong>Development time:</strong> Development lasted 1 day.</p>
+                    <p><strong>Platforms:</strong> Windows</p>
+                </div>
+                
+                <div class="bg-dark-subtle border border-dark-subtle rounded-3 p-3 mb-0">
+                    <h4 class="fw-bold">Engeneering and technical breakdown</h4>
+                    <p class="bg-dark-subtle border border-dark-subtle rounded-3 p-3"><strong>The challenge: </strong><br>Create a tiny game to understand how the game loop really works outside conventional game engines.</p>
+                    <p class="bg-dark-subtle border border-dark-subtle rounded-3 p-3"><strong>The solution: </strong><br>
+                        I created a short game focusing on the 3 main parts of the game loop:<br><br>
+                        <strong>1. Boot</strong><br>
+                        The binary excecutes and the content is loaded before entering the main loop.<br><br>
+                        <strong>2. Loading content</strong><br>
+                        This is what got me the most. I made the decision of not building a dedicated content manager class as this games uses just a couple sprites.<br>
+                        But for me it should be mandatory to build one for complete projects where lots of assets are required.<br><br>
+                        <strong>3. The actual loop</strong><br>   
+                        I defined the main logic to make the game work: the player, the bullets, the enemies and the game over message.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
