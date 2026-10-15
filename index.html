@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric's Portfolio</title>
+
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="css/buttons.css" rel="stylesheet">
+</head>
+<body class="vh-100">
+    <!-- Body -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="emailModalLabel">Attention</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Your mailing app is about to launch to write a new e-mail to: ericbusiness103@outlook.com.</p>
+            <p style="font-weight:lighter;">Said e-mail will not be either sent or filled automatically.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button class="btn btn-primary" id="writeEmail">Proceed</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+        <div class="container">
+            <span class="navbar-brand fs-6 fw-bold">Eric Enriquez</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navCollapse" class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="html/projects/gamedev.html" class="nav-link">Game Development</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="html/projects/toolsdev.html" class="nav-link">Tools Development</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About me
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">My Career</a></li>
+                            <li><a class="dropdown-item" href="#">My Resume (.PDF)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="row align-items-center p-2">
+                    <button class="animated-button d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#emailModal" role="button">
+                        <img src="img/email.png" width="32" height="32" color="white">
+                        <p>Email me</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Container -->
+    <div class="container h-100" style="padding-top: 80px;">
+        <div class="row align-items-center h-100">
+            <div>
+                <!-- Introduction paragraph -->
+                <div class="mb-5">
+                    <h3 class="border-bottom text-center pb-3"><strong>Eric Enriquez</strong></h3>
+                    <p class="text-justify mx-lg-5">Software engineer specializing in video game development. Over the past decade, I have independently studied and developed a wide array of games and prototypes to explore different architectural styles. My technical toolkit includes everything from visual engines like Unity and Godot to low-level, code-first frameworks like MonoGame (C#) and Raylib (C++).</p>
+                </div>
+
+                <!-- Cards -->
+                <div class="d-flex row justify-content-center mt-5">
+                    <div class="card card-button" style="width: 18rem;" onclick="go_to_games()">
+                        <img src="img/gamepad.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Game Development</h5>
+                            <p class="card-text">See some of my most relevant work to this day.</p>
+                        </div>
+                    </div>
+
+                    <div class="card card-button ms-md-5 mt-5 mt-md-0" style="width: 18rem;" onclick="go_to_tools()">
+                        <img src="img/tools.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tools development</h5>
+                            <p class="card-text">See some software tools I've made</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/mail.js"></script>
+
+    <script>
+        function go_to_games(){
+            window.location.href = "html/projects/gamedev.html";
+        }
+
+        function go_to_tools() {
+            window.location.href = "html/projects/toolsdev.html"
+        }
+    </script>
+</html>

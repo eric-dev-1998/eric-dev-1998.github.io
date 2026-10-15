@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric's Portfolio</title>
+
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="../../css/buttons.css" rel="stylesheet">
+</head>
+<body class="vh-100">
+    <!-- Body -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="emailModalLabel">Attention</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Your mailing app is about to launch to write a new e-mail to: ericbusiness103@outlook.com.</p>
+            <p style="font-weight:lighter;">Said e-mail will not be either sent or filled automatically.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button class="btn btn-primary" id="writeEmail">Proceed</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand fs-6 fw-bold" href="../../index.html">Eric Enriquez</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navCollapse" class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="gamedev.html" class="nav-link">Game Development</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Tools Development</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About me
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">My Career</a></li>
+                            <li><a class="dropdown-item" href="#">My Resume (.PDF)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="row align-items-center p-2">
+                    <button class="animated-button d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#emailModal" role="button">
+                        <img src="../../img/email.png" width="32" height="32" color="white">
+                        <p>Email me</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Container -->
+    <div class="container h-100" style="padding-top: 96px;">
+        <div class="row align-items-center h-100">
+            <div>
+                <!-- Introduction paragraph -->
+                <div class="mb-5">
+                    <h3 class="border-bottom text-center pb-3"><strong>Software Tools</strong></h3>
+                    <p class="text-center mx-lg-5">Below is a selection of my favorite software tools I've created, designed to save time and therefore optimize workflow in some cases.</p>                </div>
+
+                <!-- Game projects list -->
+                
+                <!-- ASL: App Setup Launcher -->
+                <div class="bg-body-tertiary border rounded mb-3">
+                    <div class="d-flex flex-xl-row flex-column">
+                        <div class="col-xl-2 col-12 p-0">
+                            <div class="d-flex justify-content-center align-items-center h-100 p-3">
+                            <img class="rounded" src="https://private-user-images.githubusercontent.com/228435277/533593218-76cc3042-1004-46b3-9280-4fb14158af40.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTIwODQ4OTEsIm5iZiI6MTc5MjA4NDU5MSwicGF0aCI6Ii8yMjg0MzUyNzcvNTMzNTkzMjE4LTc2Y2MzMDQyLTEwMDQtNDZiMy05MjgwLTRmYjE0MTU4YWY0MC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMDE1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTAxNVQxNzE2MzFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03ZGM0ZTY4NTM5OTY5ZDI2MjNhNmM5OWNlMTdiZmI0ZjY2YjBmNWFiM2RlZDEyOWZjM2VmNDRhMDJiOWIxNGQwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.bCUXSQjp6SS8GkgdiimbNBrTuszmcWGEHYc73C38YqY" height="128px">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-12 p-3">
+                            <h4 class="fw-bold">ASL: App Setup Launcher</h4>
+                            <div class="mb-2">
+                                <span class="badge bg-success">Windows</span>
+                                <span class="badge bg-primary">C#</span>
+                            </div>
+                            <p class="text-justify">
+                                ASL allows the users to create and save multiple lists of apps that can be launched at once with a single click.<br>
+                                It supports windows launch arguments for more flexibility.
+                            </p>
+                        </div>
+                        <div class="col-xl-4 col-12 align-self-center">
+                            <div class="d-flex flex-row flex-xl-column flex-grow-1 justify-content-center mb-3 mb-xl-0">
+                                <a class="animated-button d-flex align-items-center align-self-center link-light link-underline-opacity-0 mb-xl-3 me-3 me-xl-0" href="https://github.com/eric-dev-1998/ASL-App-setup-launcher.git" role="button">
+                                    <img src="../../img/git.png" width="32" height="32" color="white">
+                                    <p class="ms-2">See on GitHub</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ASL: App Setup Launcher -->
+                <div class="bg-body-tertiary border rounded mb-3">
+                    <div class="d-flex flex-xl-row flex-column">
+                        <div class="col-xl-2 col-12 p-0">
+                            <div class="d-flex justify-content-center align-items-center h-100 p-3">
+                            <img class="rounded" src="../../img/tools.png" height="128px">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-12 p-3">
+                            <h4 class="fw-bold">NPC Dialogue Node Editor</h4>
+                            <div class="mb-2">
+                                <span class="badge bg-success">Unity</span>
+                                <span class="badge bg-primary">UXML</span>
+                                <span class="badge bg-primary">USS</span>
+                                <span class="badge bg-primary">Game specific tool</span>
+                            </div>
+                            <p class="text-justify">
+                                The NPC Dialogue Node Editor makes creating dialogues and cutscenes easier.<br>
+                                This tools features special nodes to support branching, making possible to create complex and dynamic dialogues. I created this tool for <a href="gamedev.html#3DTDP">3D Top Down Prototype</a>.
+                            </p>
+                        </div>
+                        <div class="col-xl-4 col-12 align-self-center">
+                            <div class="d-flex flex-row flex-xl-column flex-grow-1 justify-content-center mb-3 mb-xl-0">
+                                <a class="animated-button d-flex align-items-center align-self-center link-light link-underline-opacity-0 mb-xl-3 me-3 me-xl-0" href="https://github.com/eric-dev-1998/Unity-top-down-3d-adventure-game.git" role="button">
+                                    <img src="../../img/git.png" width="32" height="32" color="white">
+                                    <p class="ms-2">See on GitHub</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/mail.js"></script>
+</html>

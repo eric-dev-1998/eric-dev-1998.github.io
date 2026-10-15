@@ -1,0 +1,19 @@
+:target
+{
+    animation: target_highlight 1s;
+}
+
+@keyframes target_highlight
+{
+    0% {
+        scale: 1; 
+    }
+
+    50% {
+        scale: 1.1;
+    }
+
+    100% {
+        scale: 1;
+    }
+}

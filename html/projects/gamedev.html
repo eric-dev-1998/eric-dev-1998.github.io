@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric's Portfolio</title>
+
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="../../css/buttons.css" rel="stylesheet">
+    <link href="../../css/target.css" rel="stylesheet">
+</head>
+<body class="vh-100">
+    <!-- Body -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="emailModalLabel">Attention</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Your mailing app is about to launch to write a new e-mail to: ericbusiness103@outlook.com.</p>
+            <p style="font-weight:lighter;">Said e-mail will not be either sent or filled automatically.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button class="btn btn-primary" id="writeEmail">Proceed</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand fs-6 fw-bold" href="../../index.html">Eric Enriquez</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navCollapse" class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Game Development</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="toolsdev.html" class="nav-link">Tools Development</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About me
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">My Career</a></li>
+                            <li><a class="dropdown-item" href="#">My Resume (.PDF)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="row align-items-center p-2">
+                    <button class="animated-button d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#emailModal" role="button">
+                        <img src="../../img/email.png" width="32" height="32" color="white">
+                        <p>Email me</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Container -->
+    <div class="container h-100" style="padding-top: 96px;">
+        <div class="row align-items-center h-100">
+            <div>
+                <!-- Introduction paragraph -->
+                <div class="mb-5">
+                    <h3 class="border-bottom text-center pb-3"><strong>Game Projects</strong></h3>
+                    <p class="text-justify mx-lg-5">Below is a selection of my key projects, ranging from engine-driven workflows in Unity and Godot to low-level development using MonoGame and Raylib.</p>
+                    <p class="text-justify mx-lg-5">I specialize in engineering scalable game systems (inventories, combat, dialogue) with a rigorous focus on memory optimization and clean code. Every system is built around core architectural principles, heavily utilizing object pooling to eliminate runtime allocations, robust state patterns, and strict memory ownership.</p>
+                </div>
+
+                <!-- Game projects list -->
+                
+                <!-- Done Deals (Game Jam) -->
+                <div class="bg-body-tertiary border border-2 border-primary rounded mb-3">
+                    <div class="d-flex flex-xl-row flex-column">
+                        <div class="col-xl-2 col-12 p-0">
+                            <div class="d-flex justify-content-center align-items-center h-100 p-3">
+                            <img class="rounded" src="https://img.itch.zone/aW1nLzI5NjI0NDE0LnBuZw==/315x250%23c/0A%2FtuD.png" height="128px">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-12 p-3">
+                            <h4 class="fw-bold">Done Deals</h4>
+                            <div class="mb-2">
+                                <span class="badge bg-success">Brackeys Game Jam 2026.2</span>
+                                <span class="badge bg-primary">Godot</span>
+                                <span class="badge bg-primary">GD Script</span>
+                                <span class="badge bg-primary">2D</span>
+                            </div>
+                            <p class="text-justify">
+                                Brackeys Game Jam 2026.2 submission.<br>
+                                I worked along with a team, I was in charge of core gameplay mechanics and I also created the preliminary UI design.
+                            </p>
+                        </div>
+                        <div class="col-xl-4 col-12 align-self-center">
+                            <div class="d-flex flex-row flex-xl-column flex-grow-1 justify-content-center mb-3 mb-xl-0">
+                                <a class="animated-button d-flex align-items-center align-self-center link-light link-underline-opacity-0 mb-xl-3 me-3 me-xl-0" href="https://github.com/SimPloono/FleaMarketPrototype" role="button">
+                                    <img src="../../img/git.png" width="32" height="32" color="white">
+                                    <p class="ms-2">See on GitHub</p>
+                                </a>
+                                <a class="animated-button d-flex align-items-center align-self-center link-light link-underline-opacity-0" href="https://simploono.itch.io/done-deals" role="button">
+                                    <img src="https://brandlogos.net/wp-content/uploads/2025/12/itch.io-logo_brandlogos.net_bhtjr.png" width="32" height="32" color="white">
+                                    <p class="ms-2">See on Itch.io</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Space Pilot (Godot) -->
+
+                <div class="bg-body-tertiary border rounded mb-3">
+                    <div class="d-flex flex-xl-row flex-column">
+                        <div class="col-xl-2 col-12 p-0">
+                            <div class="d-flex justify-content-center align-items-center h-100 p-3">
+                            <img class="rounded" src="../../img/Space Pilot/1.png" height="128px">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-12 p-3">
+                            <h4 class="fw-bold">Space Pilot</h4>
+                            <div class="mb-2">
+                                <span class="badge bg-primary">Godot</span>
+                                <span class="badge bg-primary">GD Script</span>
+                                <span class="badge bg-primary">2D</span>
+                                <span class="badge bg-primary">Shoot em' up</span>
+                                <span class="badge bg-primary">Spaceships</span>
+                                <span class="badge bg-primary">Combat</span>
+                            </div>
+                            <p class="text-justify">
+                                Higly inspired in the Star Fox game series, Space Pilot is a short game that features 3 themed stages and enemies and boss fights.<br>
+                                I focused in gameplay mechanics and level design following good design practices to mantain direction and scope limits.
+                            </p>
+                        </div>
+                        <div class="col-xl-4 col-12 align-self-center">
+                            <div class="d-flex flex-row flex-xl-column flex-grow-1 justify-content-center mb-3 mb-xl-0">
+                                <a class="animated-button d-flex align-items-center align-self-center link-light link-underline-opacity-0 mb-lg-3 mb-xl-0" href="https://github.com/eric-dev-1998/godot-space-pilot.git" role="button">
+                                    <img src="../../img/git.png" width="32" height="32" color="white">
+                                    <p class="ms-2">See on GitHub</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3rd Person Prototype (Unity) -->
+                <div id="3DTDP" class="bg-body-tertiary border rounded mb-3">
+                    <div class="d-flex flex-xl-row flex-column">
+                        <div class="col-xl-2 col-12 p-0">
+                            <div class="d-flex justify-content-center align-items-center h-100 p-3">
+                            <img class="rounded" src="../../img/3rd Person Prototype/0.png" height="128px">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-12 p-3">
+                            <h4 class="fw-bold">3D Top Down Prototype</h4>
+                            <div class="mb-2">
+                                <span class="badge" style="background-color:orangered">Prototype</span>
+                                <span class="badge bg-primary">Unity</span>
+                                <span class="badge bg-primary">C#</span>
+                                <span class="badge bg-primary">UXML</span>
+                                <span class="badge bg-primary">USS</span>
+                                <span class="badge bg-primary">Adventure</span>
+                                <span class="badge bg-primary">3D</span>
+                                <span class="badge bg-primary">Combat</span>
+                            </div>
+                            <p class="text-justify">
+                                This is a game prototype, even thought I worked on every aspect of this game, I also focused on tools development, being the main tool I created a dialogue node editor that supports special nodes for branching like questions and inventory lookup.<br> 
+                                <br>This game features combat, dynamic dialogues, quests and a inventory system.
+                            </p>
+                        </div>
+                        <div class="col-xl-4 col-12 align-self-center">
+                            <div class="d-flex flex-row flex-xl-column flex-grow-1 justify-content-center mb-3 mb-xl-0">
+                                <a class="animated-button d-flex align-items-center align-self-center link-light link-underline-opacity-0 mb-0 mb-lg-3 mb-xl-0" href="https://github.com/eric-dev-1998/Unity-top-down-3d-adventure-game.git" role="button">
+                                    <img src="../../img/git.png" width="32" height="32" color="white">
+                                    <p class="ms-2">See on GitHub</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arena Shooter -->
+                <div class="bg-body-tertiary border rounded mb-3">
+                    <div class="d-flex flex-xl-row flex-column">
+                        <div class="col-xl-2 col-12 p-0">
+                            <div class="d-flex justify-content-center align-items-center h-100 p-3">
+                            <img class="rounded" src="https://eric-dev-1998.github.io/Img/ArenaShooter.png" height="128px">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-12 p-3">
+                            <h4 class="fw-bold">Arena Shooter</h4>
+                            <div class="mb-2">
+                                <span class="badge" style="background-color:orangered">Prototype</span>
+                                <span class="badge bg-primary">MonoGame</span>
+                                <span class="badge bg-primary">C#</span>
+                            </div>
+                            <p class="text-justify">
+                                This is a game prototype. I created this short prototype to study the engine life cycle at a lower level that actual UI driven engines such as Unity, Unreal or Godot.<br>
+                                I had a glimpse at core parts of a game engine like the boot sequence, input management and main game loop.
+                            </p>
+                        </div>
+                        <div class="col-xl-4 col-12 align-self-center">
+                            <div class="d-flex flex-row flex-xl-column flex-grow-1 justify-content-center mb-3 mb-xl-0">
+                                <a class="animated-button d-flex align-items-center align-self-center link-light link-underline-opacity-0 mb-0 mb-lg-3 mb-xl-0" href="https://github.com/eric-dev-1998/Unity-top-down-3d-adventure-game.git" role="button">
+                                    <img src="../../img/git.png" width="32" height="32" color="white">
+                                    <p class="ms-2">See on GitHub</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/mail.js"></script>
+</html>
