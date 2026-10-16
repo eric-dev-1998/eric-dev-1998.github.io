@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric's Portfolio</title>
+
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="../css/buttons.css" rel="stylesheet">
+    <link href="../css/target.css" rel="stylesheet">
+</head>
+<body class="vh-100">
+    <!-- Body -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="emailModalLabel">Attention</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Your mailing app is about to launch to write a new e-mail to: ericbusiness103@outlook.com.</p>
+            <p style="font-weight:lighter;">Said e-mail will not be either sent or filled automatically.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button class="btn btn-primary" id="writeEmail">Proceed</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand fs-6 fw-bold" href="../index.html">Eric Enriquez</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navCollapse" class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="projects/gamedev.html" class="nav-link">Game Development</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects/toolsdev.html" class="nav-link">Tools Development</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About me
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">My Career</a></li>
+                            <li><a class="dropdown-item" href="../docs/Eric Resume - Updated.pdf">My Resume (.PDF)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="row align-items-center p-2">
+                    <button class="animated-button d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#emailModal" role="button">
+                        <img src="../img/email.png" width="32" height="32" color="white">
+                        <p>Email me</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Container -->
+    <div class="container h-100" style="padding-top: 128px;">
+        <div class="row h-100">
+            <div>
+                <!-- Introduction paragraph -->
+                <div class="mb-5">
+                    <h3 class="border-bottom text-center pb-3"><strong>My Career</strong></h3>
+                    <h5 class="mt-5 mb-3"><strong>From Player to Systems Engineer</strong></h5>
+                    <p>My journey as a <strong>Software Engineer</strong> began with an early obsession with how things work under the hood—from rebuilding my PC’s operating system as a kid to asking how my favorite video games were made. Driven by that curiosity, I taught myself the basics of logic and mechanics using Game Maker and Unity. Over the years, this creative passion evolved into a disciplined pursuit of <strong>Computer Systems Engineering</strong>. Today, I bridge the gap between creative game mechanics and robust, full-stack systems engineering, always coding, learning, and preparing to build the next generation of software.</p>
+                    
+                    <h5 class="mt-5 mb-3"><strong>Mastering the Tech Stack</strong></h5>
+                    <div>
+                        <p>Pursuing a degree in Computer Systems Engineering gave me a deep appreciation for the mechanics behind complex software. I didn’t just study Java, C++, networking, and databases—I put them to work. I used my passion for interactive media to push the boundaries of my coursework, resulting in highly technical capstones:</p>
+                        <ul>
+                            <li><p><strong>Networked MMO Prototype: </strong>Built a Unity client that successfully communicated with a local backend server to manage character creation, real-time combat, and leveling systems.</p></li>
+                            <li><p><strong>Level-Sharing Ecosystem: </strong>Engineered a "Mario Maker" style prototype integrated with a server and web frontend to dynamically upload and distribute player-created levels.</p></li>
+                        </ul>
+                    </div>
+
+                    <h5 class="mt-5 mb-3"><strong>A Curated Project Library</strong></h5>
+                    <p>My portfolio is a curated showcase of deep execution over high volume. As an independent engineer, I use my projects to rigorously test new frameworks, languages, and system designs. Every asset in my library represents hours of troubleshooting, optimization, and refining raw mechanics into polished software. From strict object-oriented design to database integration, these works prove my ability to take a complex idea from a blank text editor to a fully functional application.</p>
+                    <a href="projects/gamedev.html">Explore my selected projects</a>
+
+                    <h5 class="mt-5 mb-3"><strong>The Next Step: Ready to Build Worlds</strong></h5>
+                    <p>Graduation was just the baseline—since then, I have never stopped coding, analyzing game mechanics, and refining my engineering tools. I treat game development as a daily craft, staying sharp and constantly preparing for the right studio opportunity. I am ready to bring my deep systems engineering foundation, problem-solving resilience, and passion for clean architecture to a collaborative game team. I am fully equipped and eager to dive into gameplay programming, tools development, or systems design to help bring immersive interactive experiences to life.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="../js/mail.js"></script>
+</html>
