@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eric's Portfolio</title>
+    <title>Game Projects - Eric Enriquez</title>
 
     <!-- Bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -12,26 +12,6 @@
 </head>
 <body class="vh-100">
     <!-- Body -->
-
-    <!-- Modal -->
-    <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h1 class="modal-title fs-5" id="emailModalLabel">Attention</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <p>Your mailing app is about to launch to write a new e-mail to: ericbusiness103@outlook.com.</p>
-            <p style="font-weight:lighter;">Said e-mail will not be either sent or filled automatically.</p>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-            <button class="btn btn-primary" id="writeEmail">Proceed</button>
-        </div>
-        </div>
-    </div>
-    </div>
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
@@ -58,11 +38,15 @@
                         </ul>
                     </li>
                 </ul>
-                <div class="row align-items-center p-2">
-                    <button class="animated-button d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#emailModal" role="button">
-                        <img src="../../img/email.png" width="32" height="32" color="white">
-                        <p>Email me</p>
-                    </button>
+                <div class="d-flex justify-content-center justify-content-lg-end flex-grow-1 p-2">
+                    <div class="d-flex">
+                        <button class="animated-button align-items-center me-2" onclick="copyEmail()" data-bs-toggle="tooltip" data-bs-trigger="toggler" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="E-mail copied to clipboard.">
+                            <img class="m-0" src="../../img/email.png" width="32" height="32" color="white">
+                        </button>
+                        <a class="animated-button align-items-center" href="https://www.linkedin.com/in/eric-enriquez-3a4082365/">
+                            <img class="m-0" src="../../img/linkedin.png" width="32" height="32" color="white">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,10 +79,11 @@
                             <div class="mb-2">
                                 <span class="badge bg-success">Brackeys Game Jam 2026.2</span>
                                 <span class="badge bg-primary">Godot</span>
-                                <span class="badge bg-primary">GD Script</span>
+                                <span class="badge bg-primary">GDScript</span>
                                 <span class="badge bg-primary">2D</span>
                             </div>
                             <p class="text-justify">
+                                Development lasted one week.
                                 Brackeys Game Jam 2026.2 submission.<br>
                                 I worked along with a team, I was in charge of core gameplay mechanics and I also created the preliminary UI design.
                             </p>
@@ -131,15 +116,16 @@
                             <h4 class="fw-bold">Space Pilot</h4>
                             <div class="mb-2">
                                 <span class="badge bg-primary">Godot</span>
-                                <span class="badge bg-primary">GD Script</span>
+                                <span class="badge bg-primary">GDScript</span>
                                 <span class="badge bg-primary">2D</span>
                                 <span class="badge bg-primary">Shoot em' up</span>
                                 <span class="badge bg-primary">Spaceships</span>
                                 <span class="badge bg-primary">Combat</span>
                             </div>
                             <p class="text-justify">
-                                Higly inspired in the Star Fox game series, Space Pilot is a short game that features 3 themed stages and enemies and boss fights.<br>
-                                I focused in gameplay mechanics and level design following good design practices to mantain direction and scope limits.
+                                Solo, development lasted 4 months.
+                                Highly inspired by the Star Fox game series, Space Pilot is a short game that features 3 themed stages, enemies and boss fights.<br>
+                                I focused on gameplay mechanics and level design following good design practices to maintain direction and scope limits.
                             </p>
                         </div>
                         <div class="col-xl-4 col-12 align-self-center">
@@ -174,8 +160,9 @@
                                 <span class="badge bg-primary">Combat</span>
                             </div>
                             <p class="text-justify">
-                                This is a game prototype, even thought I worked on every aspect of this game, I also focused on tools development, being the main tool I created a dialogue node editor that supports special nodes for branching like questions and inventory lookup.<br> 
-                                <br>This game features combat, dynamic dialogues, quests and a inventory system.
+                                Solo, development lasted one year.
+                                This is a game prototype, even though I worked on every aspect of this game, I also focused on tools development, being the main tool I created a dialogue node editor that supports special nodes for branching like questions and inventory lookup.<br> 
+                                <br>This game features combat, dynamic dialogues, quests and an inventory system.
                             </p>
                         </div>
                         <div class="col-xl-4 col-12 align-self-center">
@@ -205,13 +192,14 @@
                                 <span class="badge bg-primary">C#</span>
                             </div>
                             <p class="text-justify">
-                                This is a game prototype. I created this short prototype to study the engine life cycle at a lower level that actual UI driven engines such as Unity, Unreal or Godot.<br>
+                                Solo, development lasted one day.
+                                This is a game prototype. I created this short prototype to study the engine life cycle at a lower level than actual UI driven engines such as Unity, Unreal or Godot.<br>
                                 I had a glimpse at core parts of a game engine like the boot sequence, input management and main game loop.
                             </p>
                         </div>
                         <div class="col-xl-4 col-12 align-self-center">
                             <div class="d-flex flex-row flex-xl-column flex-grow-1 justify-content-center mb-3 mb-xl-0">
-                                <a class="animated-button d-flex align-items-center align-self-center link-light link-underline-opacity-0 mb-0 mb-lg-3 mb-xl-0" href="https://github.com/eric-dev-1998/Unity-top-down-3d-adventure-game.git" role="button">
+                                <a class="animated-button d-flex align-items-center align-self-center link-light link-underline-opacity-0 mb-0 mb-lg-3 mb-xl-0" href="https://github.com/eric-dev-1998/monogame-prototype-2d-shooter.git" role="button">
                                     <img src="../../img/git.png" width="32" height="32" color="white">
                                     <p class="ms-2">See on GitHub</p>
                                 </a>
@@ -226,5 +214,9 @@
 
     <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    </script>
     <script src="../../js/mail.js"></script>
 </html>

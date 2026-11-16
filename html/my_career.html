@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eric's Portfolio</title>
+    <title>My Career - Eric Enriquez</title>
 
     <!-- Bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -12,26 +12,6 @@
 </head>
 <body class="vh-100">
     <!-- Body -->
-
-    <!-- Modal -->
-    <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h1 class="modal-title fs-5" id="emailModalLabel">Attention</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <p>Your mailing app is about to launch to write a new e-mail to: ericbusiness103@outlook.com.</p>
-            <p style="font-weight:lighter;">Said e-mail will not be either sent or filled automatically.</p>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-            <button class="btn btn-primary" id="writeEmail">Proceed</button>
-        </div>
-        </div>
-    </div>
-    </div>
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
@@ -58,11 +38,15 @@
                         </ul>
                     </li>
                 </ul>
-                <div class="row align-items-center p-2">
-                    <button class="animated-button d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#emailModal" role="button">
-                        <img src="../img/email.png" width="32" height="32" color="white">
-                        <p>Email me</p>
-                    </button>
+                <div class="d-flex justify-content-center justify-content-lg-end flex-grow-1 p-2">
+                    <div class="d-flex">
+                        <button class="animated-button align-items-center me-2" onclick="copyEmail()" data-bs-toggle="tooltip" data-bs-trigger="toggler" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="E-mail copied to clipboard.">
+                            <img class="m-0" src="../img/email.png" width="32" height="32" color="white">
+                        </button>
+                        <a class="animated-button align-items-center" href="https://www.linkedin.com/in/eric-enriquez-3a4082365/">
+                            <img class="m-0" src="../img/linkedin.png" width="32" height="32" color="white">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -101,5 +85,9 @@
 
     <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    </script>
     <script src="../js/mail.js"></script>
 </html>

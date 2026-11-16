@@ -1,3 +1,10 @@
+/* Custom tooltip */
+.custom-tooltip
+{
+    --bs-tooltip-bg: var(--bs-primary);
+    --bs-tooltip-color: var(--bs-white);
+    opacity: 1;
+}
 
 /* Animated button */
 
@@ -8,10 +15,7 @@
     background-color: rgba(0, 0, 0, 0);
     scale: 1 1;
     
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 4px;
 
     transition-property: background-color, scale;
     transition-duration: 0.25s;
